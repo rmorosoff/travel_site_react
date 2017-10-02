@@ -4,6 +4,7 @@ import './Tablerow.css';
 class Tablerow extends Component {
   render() {
     return (
+      // build table row from props sent in from App.js
       <tr>
         <td>{this.props.destination}</td>
         <td>{this.props.capital}</td>

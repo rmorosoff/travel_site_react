@@ -13,6 +13,7 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <Travelcarousel />
+        {/* pass picture, country and link as props to Card.js */}
         <Card picture="/assets/aruba_flag.svg" country="Aruba" link="http://www.arubatourism.com/" />
         <Card picture="/assets/chile_flag.svg" country="Chile" link="http://chile.travel/en/" />
         <Card picture="/assets/italy_flag.svg" country="Italy" link="http://www.italia.it/en/home.html" />
@@ -31,6 +32,7 @@ class App extends Component {
               </tr>
             </thead>
             <tbody>
+              {/* pass props to Tablerow.js to build the row */}
               <Tablerow destination="Aruba" capital="Oranjestad" language="Dutch" population="102,911" bird="Aruban Burrowing Owl"/>
               <Tablerow destination="Chile" capital="Santiago" language="Spanish" population="17.62 million" bird="Andean condor"/>
               <Tablerow destination="Italy" capital="Rome" language="Italian" population="59.83 million" bird="Bluebirds"/>
